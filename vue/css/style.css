@@ -1,0 +1,16 @@
+body{
+  width: 100%;
+}
+.title{
+  text-align: center;
+  width: 100%;
+}
+nav ul li{
+  text-align: center;
+  margin-left: 28%;
+}
+
+footer{
+  width: 100%;
+
+}
