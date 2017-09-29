@@ -14,8 +14,11 @@ function password($name,$password){
   return $donnes;
 }
 /*------------END-request---conection---FORMULAIRE*/
-function projet(){
+
+/*--------------insert project in table------------*/
+function project(){
 $req=connection()->query("SELECT titre,chef,lieu FROM project");
- $donne= $req->fetchAll();
+$donne= $req->fetchAll();
+
 return $donne;
 }

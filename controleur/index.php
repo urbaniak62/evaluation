@@ -21,7 +21,7 @@ require_once('../vue/indexvue.php');
 /*------------END-OF-CONNECTION-ON-ENTERPRISE-LOGICIEL*/
 
 /*------------begin-of-view-all-project-enterprise-------*/
-$insertProjet= projet(){
-var_dump($insertProjet);
+
+$donne= project();
+
 require_once('../vue/project.php');
-}

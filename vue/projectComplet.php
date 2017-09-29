@@ -1,6 +1,5 @@
 <?php
 require_once('header.php');
-var_dump($donne);
  ?>
 
 
@@ -9,7 +8,7 @@ var_dump($donne);
      </div>
      <div class="container">
        <div class=" project row">
-         <div class="col s12 m6">
+         <div class="col s12 m12">
            <div class="card blue-grey darken-1">
              <div class="card-content white-text">
                <span class="card-title">Project</span>
@@ -19,7 +18,7 @@ var_dump($donne);
                <p>date :<?php  ?></p>
              </div>
              <div class="card-action">
-               <a href="projectComplet.php">view this project</a>
+               <a href="project.php">back</a>
              </div>
            </div>
          </div>

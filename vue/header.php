@@ -16,8 +16,8 @@
       </div>
       <nav class="teal darken-1">
         <ul>
-          <li><a href="#">new project</a></li>
-          <li><a href="#">deconection</a></li>
+          <li><a href="newProject.php">new project</a></li>
+          <li><a href="indexvue.php">disconnections</a></li>
         </ul>
       </nav>
 
