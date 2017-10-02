@@ -21,8 +21,8 @@
         </ul>
       </nav>
 
-      <div class="progress">
+      <!-- <div class="progress">
         <div class="indeterminate"></div>
-      </div>
+      </div> -->
 
     </header>

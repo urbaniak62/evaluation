@@ -17,7 +17,7 @@ function password($name,$password){
 
 /*--------------insert project in table------------*/
 function project(){
-$req=connection()->query("SELECT titre,chef,lieu,etape,description,date FROM project");
+$req=connection()->query("SELECT titre,chef,lieu,etape,description,id,date FROM project");
 $donne= $req->fetchAll();
 
 return $donne;
@@ -26,7 +26,10 @@ return $donne;
 /*------------------------------view project complet-------------------------*/
 function projectComplet(){
 
-$req=connection()->query("SELECT * FROM project");
+$req=connection()->prepare("SELECT * FROM project WHERE id= :id");
+$req->execute (array(
+  'id'=>$_GET['project']
+));
 $donne= $req->fetch();
 
 return $donne;

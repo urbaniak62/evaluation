@@ -20,7 +20,7 @@ require_once('../controleur/project.php');
                <p>date : <?php echo $key['date'];  ?></p>
              </div>
              <div class="card-action">
-               <a href="projectComplet.php">view this project</a>
+               <a href="projectComplet.php?project=<?php echo $key['id']?>">view this project</a>
              </div>
            </div>
          </div>
