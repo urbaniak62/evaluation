@@ -21,7 +21,3 @@ require_once('../vue/indexvue.php');
 /*------------END-OF-CONNECTION-ON-ENTERPRISE-LOGICIEL*/
 
 /*------------begin-of-view-all-project-enterprise-------*/
-
-$donne= project();
-
-require_once('../vue/project.php');

@@ -15,9 +15,7 @@ require_once('header.php');
       <br>
       <input type="submit"  value="submit">
   </form>
-  <?php
-  echo sha1('nicolas');
-   ?>
+  
 </div>
 <?php
 require_once('footer.php');

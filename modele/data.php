@@ -17,8 +17,31 @@ function password($name,$password){
 
 /*--------------insert project in table------------*/
 function project(){
-$req=connection()->query("SELECT titre,chef,lieu FROM project");
+$req=connection()->query("SELECT titre,chef,lieu,etape,description,date FROM project");
 $donne= $req->fetchAll();
 
 return $donne;
+}
+
+/*------------------------------view project complet-------------------------*/
+function projectComplet(){
+
+$req=connection()->query("SELECT * FROM project");
+$donne= $req->fetch();
+
+return $donne;
+}
+/*---------------------insert new project---------------------------*/
+function insert($titre,$chef,$lieu,$description,$date){
+  $req=connection()->prepare("INSERT INTO project(titre,chef,lieu,description,etape,date)
+                             VALUES(:titre,:chef,:lieu,:etape,:description,:date)");
+  $req->execute (array(
+    ':titre'=>$titre,
+    ':chef'=>$chef,
+    ':lieu'=>$lieu,
+    'etape'=>"test",
+    ':description'=>$description,
+    ':date'=>$date
+  ));
+
 }
