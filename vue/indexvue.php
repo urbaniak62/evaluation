@@ -15,8 +15,9 @@ require_once('header.php');
       <br>
       <input type="submit"  value="submit">
   </form>
-  
+
 </div>
 <?php
+
 require_once('footer.php');
  ?>

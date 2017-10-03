@@ -36,8 +36,8 @@ return $donne;
 }
 /*---------------------insert new project---------------------------*/
 function insert($titre,$chef,$lieu,$description,$date){
-  $req=connection()->prepare("INSERT INTO project(titre,chef,lieu,description,etape,date)
-                             VALUES(:titre,:chef,:lieu,:etape,:description,:date)");
+  $req=connection()->prepare("INSERT INTO project(titre,chef,lieu,description,etape,date,id_chef)
+                             VALUES(:titre,:chef,:lieu,:etape,:description,:date");
   $req->execute (array(
     ':titre'=>$titre,
     ':chef'=>$chef,
