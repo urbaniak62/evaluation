@@ -35,16 +35,17 @@ $donne= $req->fetch();
 return $donne;
 }
 /*---------------------insert new project---------------------------*/
-function insert($titre,$chef,$lieu,$description,$date){
+function insert($titre,$chef,$lieu,$description,$date,$id_chef){
   $req=connection()->prepare("INSERT INTO project(titre,chef,lieu,description,etape,date,id_chef)
-                             VALUES(:titre,:chef,:lieu,:etape,:description,:date");
+                             VALUES(:titre,:chef,:lieu,:etape,:description,:date,:id_chef)");
   $req->execute (array(
-    ':titre'=>$titre,
-    ':chef'=>$chef,
-    ':lieu'=>$lieu,
+    'titre'=>$titre,
+    'chef'=>$chef,
+    'lieu'=>$lieu,
     'etape'=>"test",
-    ':description'=>$description,
-    ':date'=>$date
+    'description'=>$description,
+    'date'=>$date,
+    'id_chef'=>$id_chef
   ));
 
 }

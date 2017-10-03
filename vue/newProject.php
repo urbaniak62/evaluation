@@ -13,6 +13,10 @@ require_once('header.php');
      <input placeholder="chef de project"  type="text" name="chef">
        <label >chef de projet</label>
      </div>
+     <div class="input-field col s6">
+     <input placeholder="identifiant"  type="text" name="id_chef">
+       <label >identifiant</label>
+     </div>
    </div>
    <div class="row">
      <div class="input-field col s6">

@@ -6,7 +6,7 @@ require_once('../controleur/project.php');
  <?php foreach ($donne as $key)
  {
    ?>
-
+  
      <div  id="project" class="container">
        <div class=" project row">
          <div class="col s12 m6">
