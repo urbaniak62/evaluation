@@ -1,7 +1,7 @@
 <?php
 require_once('connection.php');
 
-/*---------request-of-connection----formulaire*/
+/*---------request-of-connection-by--formulaire*/
 function password($name,$password){
 
   $req=connection()->prepare("SELECT * FROM connection
@@ -15,13 +15,14 @@ function password($name,$password){
 }
 /*------------END-request---conection---FORMULAIRE*/
 
-/*--------------insert project in table------------*/
+/*--------------view project ------------*/
 function project(){
 $req=connection()->query("SELECT titre,chef,lieu,etape,description,id,date FROM project");
 $donne= $req->fetchAll();
 
 return $donne;
 }
+/*-------------end view project--------------*/
 
 /*------------------------------view project complet-------------------------*/
 function projectComplet(){
@@ -34,6 +35,9 @@ $donne= $req->fetch();
 
 return $donne;
 }
+/*----------------------end view project complet----------------------*/
+
+
 /*---------------------insert new project---------------------------*/
 function insert($titre,$chef,$lieu,$description,$date,$id_chef){
   $req=connection()->prepare("INSERT INTO project(titre,chef,lieu,description,etape,date,id_chef)
@@ -49,3 +53,4 @@ function insert($titre,$chef,$lieu,$description,$date,$id_chef){
   ));
 
 }
+/*----------------------end insert project------------------------*/

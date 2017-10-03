@@ -27,6 +27,9 @@ nav ul li {
   width: 50%;
   float: left;
 }
+form a{
+  clear: left;
+}
 
 footer {
   width: 100%;

@@ -19,5 +19,3 @@ else{
 }
 require_once('../vue/indexvue.php');
 /*------------END-OF-CONNECTION-ON-ENTERPRISE-LOGICIEL*/
-
-/*------------begin-of-view-all-project-enterprise-------*/
