@@ -4,7 +4,8 @@ require_once('connection.php');
 /*---------request-of-connection-by--formulaire*/
 function password($name,$password){
 
-  $req=connection()->prepare("SELECT * FROM connection
+  $req=connection()->prepare("SELECT connection.id,project.id_chef FROM connection
+    INNER JOIN project ON connection.id=project.id_chef
   WHERE name = :name AND password = :password") ;
   $req->execute (array(
     'name'=>$name,
