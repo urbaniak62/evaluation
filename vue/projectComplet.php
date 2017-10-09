@@ -20,7 +20,9 @@ require_once('../controleur/projectComplet.php');
               <a href="../controleur/project.php">back</a>
              </div>
              <form  method="post">
-               <a class="waves-effect waves-light btn" name="delete">delete</a>
+               <div class="card-action">
+                 <a href="project.php" name="delete">delete</a>
+               </div>
              </form>
            </div>
          </div>

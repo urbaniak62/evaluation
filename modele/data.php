@@ -55,3 +55,5 @@ function insert($titre,$chef,$lieu,$description,$date,$id_chef){
 
 }
 /*----------------------end insert project------------------------*/
+
+/*----------------------delete project-----------------------------*/
